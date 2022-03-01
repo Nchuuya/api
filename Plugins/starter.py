@@ -4,7 +4,7 @@ from telethon import events
 
 class start():
 
-    @bot.on(events.NewMessage(pattern="/start"))
+    @bot.on(events.NewMessage(pattern="/mangastart"))
     async def event_handler_start(event):
         await bot.send_message(
             event.chat_id,
@@ -12,17 +12,17 @@ class start():
             file='https://telegra.ph/file/92cf02b20ff395bd5e9e0.jpg'
         )
 
-    @bot.on(events.NewMessage(pattern="/help"))
+    @bot.on(events.NewMessage(pattern="/mangahelp"))
     async def event_handler_help(event):
         await bot.send_message(
             event.chat_id,
             help_text
             )
 
-    @bot.on(events.NewMessage(pattern="/source"))
+    @bot.on(events.NewMessage(pattern="/mangasource"))
     async def event_handler_source(event):
         await bot.send_message(
             event.chat_id,
-            '[Channel](https://t.me/Animemusicarchive6)\nThis bot was hosted on Heroku'
+            '[Channel](https://t.me/ahjin_network)\nThis bot was hosted on Heroku'
         )
     
