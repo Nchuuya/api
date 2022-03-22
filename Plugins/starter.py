@@ -23,6 +23,6 @@ class start():
     async def event_handler_source(event):
         await bot.send_message(
             event.chat_id,
-            '[Channel](https://t.me/ahjin_network)\nThis bot was hosted on Heroku'
+            '[Channel](https://t.me/boa_support)\nThis bot was hosted on Heroku'
         )
     
