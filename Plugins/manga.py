@@ -56,7 +56,7 @@ class Manga():
             await bot.send_message(
                 event.chat_id,
                 "Open this in google chrome",
-                file= f"{split_data[0]}{split_data[1]}.html"
+                file= f"{split_data[0]}{split_data[1]}.pdf"
             )
 
         except Exception as e:
