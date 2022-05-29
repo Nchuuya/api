@@ -52,7 +52,7 @@ class Manga():
             if chap == "Invalid Mangaid or chapter number":
                 await event.reply("Something went wrong.....\nCheck if you entered command properly\nCommon mistakes:\nYou didnt mention chapter number\nyou added space after : , dont leave space\n\n\@miya_chinen_robot if you have any further doubts")
                 return
-            format.manga_chapter_html(f"{split_data[0]}{split_data[1]}", chap)
+            format.manga_chapter_pdf(f"{split_data[0]}{split_data[1]}", chap)
             await bot.send_message(
                 event.chat_id,
                 "Open this in google chrome",
